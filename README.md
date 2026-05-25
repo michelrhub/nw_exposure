@@ -184,10 +184,30 @@ The script generates 9 files:
 
 Open SQL Developer (or Database Actions SQL Worksheet):
 
-#### A. Load or paste the contents of the SQL files.
-#### B. Identify each query start/end block.
-#### C. Select and execute the query.
-#### D. Review results in the grid, or download in your preferred format.
+#### A. Open SQL Web from Database Actions
+<p align="center">
+  <img src="images/navigate_SQL.png" alt="Open Data Studio" width="760">
+</p>
+
+#### B. Load or paste the contents of the SQL files.
+<p align="center">
+  <img src="images/Paste_SQL.png" alt="Open Data Studio" width="760">
+</p>
+
+#### C. Identify each query start/end block.
+<p align="center">
+  <img src="images/begin_End_query.png" alt="Open Data Studio" width="760">
+</p>
+
+#### D. Select and execute the query.
+<p align="center">
+  <img src="images/Execute_query.png" alt="Open Data Studio" width="760">
+</p>
+
+#### E. Review results in the grid, or download in your preferred format.
+<p align="center">
+  <img src="images/Review_results.png" alt="Open Data Studio" width="760">
+</p>
 
 ## Queries Description
 
