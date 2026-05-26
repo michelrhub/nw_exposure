@@ -79,7 +79,7 @@ END;
 
 ## Workflow sumary
 
-1. Download and run the data extraction script: [scripts/ng_get_all_turbo.py](scripts/ng_get_all_turbo.py).
+1. Download and run the data extraction script: [scripts/retrieve_nw_data.py](scripts/retrieve_nw_data.py).
 2. Import generated data files into your Oracle Database as JSON collections.
 3. Execute SQL query packs:
    - [queries/01_Internet_facing_queries.sql](queries/01_Internet_facing_queries.sql)
@@ -95,7 +95,7 @@ END;
 To the instance with OCI Cli or to the Cloud Shell session
 
 ```bash
-wget URL://to-be-completed/ng_get_all_turbo.py
+wget https://github.com/michelrhub/nw_exposure/blob/main/scripts/retrieve_nw_data.py
 ```
 
 ### 3. Create a Python virtual environment and install required module
@@ -118,13 +118,13 @@ python3 ng_get_all_turbo.py
 **Or** specifying config file and profile:
 
 ```bash
-python3 ng_get_all_turbo.py --config-file ~/.oci/config --profile DEFAULT
+python3 retrieve_nw_data.py --config-file ~/.oci/config --profile DEFAULT
 ```
 
 **Or** run in Cloud Shell (delegation token mode):
 
 ```bash
-python3 ng_get_all_turbo.py -dt
+python3 retrieve_nw_data.py -dt
 ```
 
 ### 5. Check the results
