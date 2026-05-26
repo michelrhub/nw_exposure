@@ -82,8 +82,9 @@ END;
 1. Download and run the data extraction script: [scripts/ng_get_all_turbo.py](scripts/ng_get_all_turbo.py).
 2. Import generated data files into your Oracle Database as JSON collections.
 3. Execute SQL query packs:
-   - [queries/Internet_facing_queries.sql](queries/Internet_facing_queries.sql)
-   - [queries/Private_subnets_queries.sql](queries/Private_subnets_queries.sql)
+   - [queries/01_Internet_facing_queries.sql](queries/01_Internet_facing_queries.sql)
+   - [queries/02_Query_items_and_cleanup_queries.sql](queries/02_Query_items_and_cleanup_queries.sql)
+   - [queries/03_Private_subnets_queries.sql](queries/03_Private_subnets_queries.sql)
 4. Review, prioritize, and remediate findings.
 
 ## Workflow steps
@@ -213,7 +214,7 @@ Open SQL Developer (or Database Actions SQL Worksheet):
 
 ### Internet-facing query pack
 
-Source file: [queries/Internet_facing_queries.sql](queries/Internet_facing_queries.sql)
+Source file: [queries/01_Internet_facing_queries.sql](queries/01_Internet_facing_queries.sql)
 
 - In-use insecure Security Lists in public networks.
 - In-use insecure NSGs on VNICs in public networks.
@@ -225,24 +226,24 @@ Source file: [queries/Internet_facing_queries.sql](queries/Internet_facing_queri
 
 Objective: identify effective internet-facing exposure and support risk-based prioritization.
 
+### Cleanup and query individual items query pack
+
+Source file: [queries/02_Query_items_and_cleanup_queries.sql](queries/02_Query_items_and_cleanup_queries.sql)
+
+- Unused Security Lists
+- Unused NSGs
+- VNIC Lookup
+- IP Address Lookup
+
 ### Private subnet query pack
 
-Source file: [queries/Private_subnets_queries.sql](queries/Private_subnets_queries.sql)
+Source file: [queries/03_Private_subnets_queries.sql](queries/03_Private_subnets_queries.sql)
 
 - Placeholder for queries focused on permissive rules used for internal/private traffic.
 
-## Documentation
-
-- [docs/security-considerations.md](docs/security-considerations.md)
-- [docs/data-model.md](docs/data-model.md)
-- [docs/adb-data-load.md](docs/adb-data-load.md)
-- [docs/troubleshooting.md](docs/troubleshooting.md)
-- [CONTRIBUTING.md](CONTRIBUTING.md)
-- [CHANGELOG.md](CHANGELOG.md)
-
 ## Acknowledgments
 
-Special thanks to the OCI Compliance Script team. Parts of the detection logic, data extraction strategy, and query reasoning in this repository were inspired by that work.
+Special thanks to the developers of the [OCI CIS Compliance Script](https://github.com/oci-landing-zones/oci-cis-landingzone-quickstart/blob/main/README.md). Parts of the detection logic, data extraction strategy, and query reasoning in this repository were inspired by that work.
 
 ## License
 
