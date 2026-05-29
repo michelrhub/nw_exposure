@@ -191,8 +191,8 @@ Open SQL Developer (or Database Actions SQL Worksheet):
 </p>
 
 #### B. Load or paste the contents of the chosen SQL file.
-[queries/01_Internet_facing_queries.sql](queries/01_Internet_facing_queries.sql)
-[queries/02_Query_items_and_cleanup_queries.sql](queries/02_Query_items_and_cleanup_queries.sql)
+[queries/01_Internet_facing_queries.sql](queries/01_Internet_facing_queries.sql)<br>
+[queries/02_Query_items_and_cleanup_queries.sql](queries/02_Query_items_and_cleanup_queries.sql)<br>
 [queries/03_Private_subnets_queries.sql](queries/03_Private_subnets_queries.sql)
 
 <p align="center">
